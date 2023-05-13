@@ -1,0 +1,67 @@
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(19, 19, 63), rgb(44, 44, 138), #114, rgb(11, 11, 97));
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+form {
+    background-color: whitesmoke;
+    height: 150px;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.div {
+    position: relative;
+}
+
+.input {
+    padding: 15px 10px;
+    width: 280px;
+    border: 2px solid #119;
+    border-radius: 5px;
+    outline: none;
+    background-color: whitesmoke;
+    font-size: 20px;
+}
+
+.label {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    font-size: 20px;
+    pointer-events: none;
+    transition: .5s;
+    color: #444;
+}
+
+/* To Make The Placeholder move up when the input field is focused */
+
+.input:focus ~ .label {
+    top: -14px;
+    background-color: whitesmoke;
+    font-size: 18px;
+    color: #114;
+    padding: 0px 3px;
+}
+
+footer {
+    color: white;
+    font-size: 20px;
+}
